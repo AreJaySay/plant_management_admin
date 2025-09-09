@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "884953162823",
+    "project_id": "plant-management-69e55",
+    "storage_bucket": "plant-management-69e55.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884953162823:android:434d4ceda8ef2514edfd62",
+        "android_client_info": {
+          "package_name": "com.plant_management.admin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp8ioIQa0aabcRJStIj7yfgTx_ktOep38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
