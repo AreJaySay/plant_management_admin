@@ -50,6 +50,7 @@ dependencies:
   fade_shimmer: ^2.4.0
   syncfusion_flutter_charts: ^31.1.17
   zoom_tap_animation: ^1.1.0
+  printing: ^5.14.2
 
   # FIREBASE
   firebase_database: ^12.0.0

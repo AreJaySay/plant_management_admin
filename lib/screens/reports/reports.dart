@@ -1,6 +1,8 @@
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:plant_management/screens/reports/components/print.dart';
+import 'package:plant_management/services/routes.dart';
 import 'package:plant_management/utils/snackbars/snackbar_message.dart';
 
 import '../../utils/palettes/app_colors.dart' hide Colors;
@@ -12,6 +14,7 @@ class Reports extends StatefulWidget {
 }
 
 class _ReportsState extends State<Reports> {
+  final Routes _routes = new Routes();
   final SnackbarMessage _snackbarMessage = new SnackbarMessage();
   DateTime? _dateFrom;
   DateTime? _dateTo;
@@ -210,7 +213,18 @@ class _ReportsState extends State<Reports> {
               Spacer(),
               IconButton(
                 icon: Icon(Icons.print,size: 28,),
-                onPressed: (){},
+                onPressed: (){
+                  showDialog<void>(
+                      context: context,
+                      builder: (context) => AlertDialog(
+                          backgroundColor: Colors.white,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.all(Radius.circular(20.0))
+                          ),
+                          content: Print()
+                      )
+                  );
+                },
               ),
               SizedBox(
                 width: 10,
